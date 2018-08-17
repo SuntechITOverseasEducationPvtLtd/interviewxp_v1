@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Responsive HTML5 Video Player with/without Advertising</title>
+  <meta name="description" content="Responsive HTML5 Video Player with/without Advertising" />
+  <meta property="og:title" content="HTML5 Video Player by _zac_" />
+  <meta property="og:image" content="http://player.pageflip.com.hr/imgFB/preview.png" />
+  <link rel="stylesheet" href="css/videoPlayerMain.css" type="text/css">
+  <link rel="stylesheet" href="css/videoPlayer.theme1.css" type="text/css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.js"></script>
+  <script src="js/IScroll4Custom.js" type="text/javascript"></script>
+  <script src='js/THREEx.FullScreen.js'></script>
+  <script src="js/videoPlayer.js" type="text/javascript"></script>
+  <script src="js/Playlist.js" type="text/javascript"></script>
+
+  <script type="text/javascript" charset="utf-8">
+  $(document).ready(function($)
+  {
+      videoPlayer = $("#video").Video({
+          autoplay:false,
+          autohideControls:4,
+          videoPlayerWidth:746,
+          videoPlayerHeight:420,
+          posterImg:"images/preview_images/2.jpg",
+          fullscreen_native:true,
+          fullscreen_browser:false,
+          restartOnFinish:false,
+          spaceKeyActive:true,
+          rightClickMenu:true,
+		  hideVideoSource:false,						 
+          share:[{
+              show:true,
+              facebookLink:"https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.player.pageflip.com.hr%2FplayerFB%2Findex.html",
+              twitterLink:"https://twitter.com/intent/tweet?source=webclient&text=Responsive+HTML5+video+player+with+Advertising+by+zac+http%3A%2F%2Fwww.player.pageflip.com.hr%2FplayerFB%2Findex.html",
+              youtubeLink:"http://www.youtube.com/watch?v=sAFt_cb-Z7I",
+              pinterestLink:"http://pinterest.com/pin/create/bookmarklet/?media=http%3A%2F%2Fwww.player.pageflip.com.hr%2FimgFB%2F%2Fpreview.png&url=http%3A%2F%2Fwww.player.pageflip.com.hr%2FplayerFB%2F&description=ResponsiveHTML5VideoPlayerWithAdvertising",
+              linkedinLink:"http://www.linkedin.com/cws/share?url=http%3A%2F%2Fwww.player.pageflip.com.hr%2FplayerFB%2F&original_referer=http%3A%2F%2Fwww.pageflip.com.hr%2FplayerFB%2F&token=&isFramed=true&lang=en_US&_ts=1378818194488.6047",
+              googlePlusLink:"https://plus.google.com/share?url=http://www.player.pageflip.com.hr/playerFB/index.html",
+              deliciousLink:"https://delicious.com/post?url=http://www.pageflip.com.hr/playerFB/&title=Responsive%20HTML5%20Video%20Player%20with%20Advertising%20by%20zac",
+              mailLink:"mailto:codecanyon@codecanyon.net"
+          }],
+          logo:[{
+              show:true,
+              clickable:true,
+              path:"images/logo/logo.png",
+              goToLink:"http://codecanyon.net/",
+              position:"top-right"
+          }],
+          embed:[{
+              show:true,
+              embedCode:'<iframe src="www.yoursite.com/player/index.html" width="746" height="420" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>'
+          }],
+          videos:[{
+                  id:0,
+                  title:"Oceans",
+                  mp4:"http://player.pageflip.com.hr/videos/Oceans.mp4",
+                  info:"Video info goes here",
+
+                  popupAdvertisementShow:true,
+                  popupAdvertisementClickable:true,
+                  popupAdvertisementPath:"images/advertisement_images/ad2.jpg",
+                  popupAdvertisementGotoLink:"http://codecanyon.net/",
+                  popupAdvertisementStartTime:"00:02",
+                  popupAdvertisementEndTime:"00:10",
+
+                  videoAdvertisementShow:true,
+                  videoAdvertisementClickable:true,
+                  videoAdvertisementGotoLink:"http://codecanyon.net/",
+                  videoAdvertisement_mp4:"http://player.pageflip.com.hr/videos/Sintel_Trailer.mp4"
+              }]
+      });
+  });
+</script>
+</head>
+
+<body>
+  <div id="video"></div>
+</body>
+
+</html>

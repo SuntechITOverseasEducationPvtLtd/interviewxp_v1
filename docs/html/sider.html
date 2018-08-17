@@ -1,0 +1,199 @@
+<script type='text/javascript' src='front/js/menu-jquery.js'></script> 
+<div class="col-sm-4 col-md-3 col-lg-2 left-green-box">
+                 <div class="left-section-member">
+                     
+                  <div class="member-profile">
+                     <div class="rounded-box"> <img src="images/member-profile-img.jpg" alt="Interviewxp" /></div>
+                      <div class="profile-name">
+                          <h5>Ryan Moreno</h5>
+                          <h6>Member</h6>
+                      </div>
+                      <div class="angle visible-xs hidden-sm hidden-md hidden-lg"><a><i class="fa fa-angle-down" aria-hidden="true"></i></a></div>
+                  </div>
+<!--
+                  <div class="inner-list">
+                     <h5 class="heading-LeftSection"><a>Interview Q &amp; A</a></h5>
+                      <ul class="nav-list">
+                          <li><a>Manage Upload History</a></li>
+                          <li><a>Add New Skills</a></li>
+                      </ul>
+                      
+                    <h5 class="heading-LeftSection"><a>My Profile</a></h5>
+                      <ul class="nav-list">
+                          <li><a>Personal</a></li>
+                          <li><a>Employment</a></li>
+                          <li><a>Education</a></li>
+                      </ul>
+                      
+                     <h5 class="heading-LeftSection"><a>My Pages</a></h5>
+                      <ul class="nav-list">
+                          <li><a>About this Interview</a></li>
+                          <li><a>Curriculum</a></li>
+                          <li><a>Biography</a></li>
+                          <li><a>My Interview Experience</a></li>
+                          <li><a>Present Calls in Job Market</a></li>
+                      </ul>
+                      
+                     <h5 class="heading-LeftSection"><a>My Real Time Experience</a></h5>
+                      <ul>
+                          <li><a>Add Real Time Experience</a></li>
+                          <li class="active"><a>Manage Real Time Experience Added</a></li>
+                      </ul>
+                  </div> 
+                     
+-->
+                     
+                     <div id='cssmenu'>
+<ul>
+   
+   <li class='has-sub active'><a href='#'><span>Interview Q &amp; A</span></a>
+      <ul class="submenu">
+         <li><a href='#'><span>Manage Upload History</span></a></li>
+         <li class='has-sub'><a href='#'><span>Add New Skills</span></a></li>
+         <li class='last'><a href='#'><span>Products</span></a></li>
+      </ul>
+   </li>
+   <li class='has-sub'><a href='#'><span>My Profile</span></a>
+      <ul class="submenu">
+         <li><a href='#'><span>Personal</span></a></li>
+          <li><a href='#'><span>Education</span></a></li>
+         <li class='last'><a href='#'><span>Employment</span></a></li>
+      </ul>
+   </li>
+    <li class='has-sub'><a href='#'><span>My Pages</span></a>
+      <ul class="submenu">
+         <li><a href='#'><span>About this Interview</span></a></li>
+         <li><a href='#'><span>Curriculum</span></a></li>
+         <li><a href='#'><span>Biography</span></a></li>
+         <li><a href='#'><span>My Interview Experience</span></a></li>
+         <li class='last'><a href='#'><span>Present Calls in Job Market</span></a></li>
+      </ul>
+   </li>
+    
+   <li class='last'><a href='#'><span>My Real Time Experience</span></a>
+     <ul class="submenu">
+         <li><a href='#'><span>Add Real Time Experience</span></a></li>
+         <li class='last'><a href='#'><span>Manage Real Time Experience Added</span></a></li>
+      </ul>
+  
+  </li>
+</ul>
+</div>
+            
+                 </div> 
+              </div>
+
+<style>
+
+#cssmenu,
+#cssmenu ul,
+#cssmenu li,
+#cssmenu a {
+/*
+  margin: 0;
+  padding: 0;
+ 
+  list-style: none;
+  font-weight: normal;
+  text-decoration: none;
+  line-height: 1;
+  font-size: 14px;
+*/
+     border: 0;
+  position: relative;
+}
+#cssmenu a {
+  line-height: 1.3;
+  padding:10px 15px;
+}
+
+#cssmenu > ul > li {
+  cursor: pointer;
+  border-bottom: 1px solid #0e998e;
+}
+#cssmenu > ul > li:last-child {
+  border-bottom: 1px solid #0e998e;
+}
+#cssmenu > ul > li > a {
+  font-size: 16px;
+  display: block;
+  color: #ffffff;
+font-family: "ubuntu",sans-serif;
+}
+#cssmenu > ul > li > a:hover {
+  text-decoration: none;
+}
+#cssmenu > ul > li.active {
+  border-bottom: none;
+}
+#cssmenu > ul > li.active > a {
+  background: #0e998e;
+  color: #fff;
+}
+#cssmenu > ul > li.has-sub > a:after {
+  content: '';
+  position: absolute;
+  top: 17px;
+  right: 10px;
+  border: 5px solid transparent;
+  border-left: 5px solid #ffffff;
+}
+#cssmenu > ul > li.has-sub.active > a:after {
+  right: 14px;
+  top: 17px;
+  border: 5px solid transparent;
+  border-top: 5px solid #fff;
+}
+/* Sub menu */
+#cssmenu ul ul {
+  padding: 0;
+  display: none;
+}
+#cssmenu ul ul a {
+  background: #f4f4f4;
+  display: block;
+  color: #666;
+  font-size: 14px;
+  padding: 10px 15px 10px 35px;    
+}
+#cssmenu ul ul li {
+  border-bottom: 1px solid #ddd;
+}
+#cssmenu ul ul li.odd a {
+  background: #efefef;
+}
+#cssmenu ul ul li:last-child {
+  border: none;
+}
+    
+    
+#cssmenu ul > li .submenu > li > a:focus,
+#cssmenu ul > li .submenu > li > a:hover {
+    text-decoration: none;
+}
+#cssmenu ul > li .submenu > li:before,
+#cssmenu ul > li .submenu > li > ul > li:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width:12px;
+    left:18px;
+    top: 17px;
+    border-top:1px dashed rgba(14, 153, 142, 1);
+    z-index: 1;
+}
+#cssmenu ul > li .submenu > li > ul > li:before {
+    width: 22px;
+}
+#cssmenu ul > li .submenu > li:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left:16px;
+    width: 0;
+    border-left:1px dashed rgba(14, 153, 142, 1);
+}
+
+</style>

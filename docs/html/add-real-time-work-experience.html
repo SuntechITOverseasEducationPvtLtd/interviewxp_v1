@@ -1,0 +1,155 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="description" content="" />
+      <meta name="keywords" content="" />
+      <meta name="author" content="" />
+      <!-- ======================================================================== -->
+      <title>Interviewxp </title>
+      <link rel="icon" href="favicon.png" type="image/x-icon" />
+      <!-- Bootstrap Core CSS -->
+      <link href="front/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+      <!-- main CSS -->
+      <link href="front/css/Interviewxp.css" rel="stylesheet" type="text/css" />
+      <!--font-awesome-css-start-here-->
+      <link href="front/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+      <script type="text/javascript" language="javascript" src="front/js/jquery-1.11.3.min.js"></script>
+      <script type="text/javascript">
+         $(function() {
+             $("#member-header").load("member-header.html");
+             $("#footer").load("footer.html");
+         });
+      </script>
+   </head>
+   <body>
+      <div id="member-header" class="after-login"></div>
+      <div class="banner-member">
+         <div class="pattern-member">
+            
+         </div>
+      </div>
+    
+         <div class="container-fluid fix-left-bar">
+            <div class="row">
+              <div class="col-sm-4 col-md-3 col-lg-2 left-green-box">
+                 <div class="left-section-member">
+                  <div class="member-profile">
+                     <div class="rounded-box"> <img src="images/member-profile-img.jpg" alt="Interviewxp" /></div>
+                      <div class="profile-name">
+                          <h5>Ryan Moreno</h5>
+                          <h6>Member</h6>
+                      </div>
+                      <div class="angle visible-xs hidden-sm hidden-md hidden-lg"><a><i class="fa fa-angle-down" aria-hidden="true"></i></a></div>
+                  </div>
+                    
+                     <div class="inner-list">
+                     <h5 class="heading-LeftSection"><a>Interview Q &amp; A</a></h5>
+                      <ul>
+                          <li><a>Manage Upload History</a></li>
+                          <li><a>Add New Skills</a></li>
+                      </ul>
+                      
+                    <h5 class="heading-LeftSection"><a>My Profile</a></h5>
+                      <ul>
+                          <li><a>Personal</a></li>
+                          <li><a>Employment</a></li>
+                          <li><a>Education</a></li>
+                      </ul>
+                      
+                     <h5 class="heading-LeftSection"><a>My Pages</a></h5>
+                      <ul>
+                          <li><a>About this Interview</a></li>
+                          <li><a>Curriculum</a></li>
+                          <li><a>Biography</a></li>
+                          <li><a>My Interview Experience</a></li>
+                          <li><a>Present Calls in Job Market</a></li>
+                      </ul>
+                      
+                     <h5 class="heading-LeftSection"><a>My Real Time Experience</a></h5>
+                      <ul>
+                          <li class="active"><a>Add Real Time Experience</a></li>
+                          <li><a>Manage Real Time Experience Added</a></li>
+                      </ul>
+                  </div>      
+                      
+                 </div> 
+              </div>
+              
+              <div class="col-sm-8 col-md-9 col-lg-10">
+                     <h2 class="heading-real-time-exp">Add Real Time Experience</h2>
+                   
+                   <div class="work-exp-wrapper">
+                   
+                   <div class="btn-add-more"><button type="button" class="submit-btn ctn">Add More</button></div>
+                   
+                    <div class="form-group">
+                        <label>Add Issues Title</label>
+                        <input type="text" class="input-box-signup" placeholder="Enter Your Add Issues Title" />
+                        <!--div class="error">Issues is not Valid</div-->
+                     </div>
+                     <div class="form-group">
+                        <label>Experience Level</label>
+                        
+                              <div class="select-number">
+                                 <select>
+                                    <option>--- Select Experience Level ---</option>
+                                    <option>fresher</option>
+                                    <option>01</option>
+                                    <option>02</option>
+                                    <option>03</option>
+                                 </select>
+                              </div>
+                           </div>
+                           
+                    <div class="form-group">
+                        <label>Add Solution</label>
+                        <textarea class="add-solution" cols="30" rows="8" ></textarea>
+                    </div>
+                    
+                     <!--upload resume section-->
+                     <div class="form-group">
+                        <label>Attachment</label>
+                        <div class="user-box row">
+                           <div class="col-sm-12 col-md-12 col-lg-12">
+                              <input id="profile_image" style="visibility:hidden; height: 0;" name="file" type="file">
+                              <div class="input-group ">
+                                 <div class="btn btn-primary btn-file btn-gry">
+                                    <a class="file" onclick="browseImage()">Choose File
+                                    </a>
+                                 </div>
+                                 <div class="btn btn-primary btn-file remove" style="border-right: 1px solid rgb(251, 251, 251) ! important; display: none;" id="btn_remove_image">
+                                    <a class="file" onclick="removeBrowsedImage()"><i class="fa fa-trash"></i>
+                                    </a>
+                                 </div>
+                                 <input class="form-control file-caption  kv-fileinput-caption" id="profile_image_name" disabled="disabled" type="text">
+                              </div>
+                           </div>
+                           <div class="clearfix"></div>
+                        </div>
+                        <h5 class="upload">Support Formats: doc, docx, rtf, PDF, Max File 500 KB</h5>
+                     </div>
+                     <!--end-->                        
+                     <div class="btn-wrapper">
+                           <button type="button" class="submit-btn">Submit</button>
+                           <button type="button" class="cancel-btn">Cancel</button>
+                       </div>   
+                           
+                        </div>
+              
+            
+       </div>
+                
+               </div>
+            </div>
+         </div>
+         
+            
+    
+      <!--footer section-->
+      <div id="footer"></div>
+
