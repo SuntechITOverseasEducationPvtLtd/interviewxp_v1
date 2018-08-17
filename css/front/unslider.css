@@ -1,0 +1,66 @@
+.unslider{overflow:auto;margin:0;padding:0}.unslider-wrap{position:relative}.unslider-wrap.unslider-carousel li{float: left;}.unslider-vertical>ul{height:100%}.unslider-vertical li{float:none;width:100%}.unslider-fade{position:relative}.unslider-fade .unslider-wrap li{position:absolute;left:0;top:0;right:0;z-index:8}.unslider-fade .unslider-wrap li.unslider-active{z-index:10}.unslider li,.unslider ol,.unslider ul{list-style:none;margin:0;padding:0;border:none}.unslider-arrow{position:absolute;left:20px;z-index:2;cursor:pointer}.unslider-arrow.next{left:auto;right:20px}
+.unslider-fade .unslider-wrap li span{color: #000;}
+* {margin: 0;padding: 0;-webkit-font-smoothing: antialiased;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+.wrap {width: 940px;margin: 0 auto;}
+
+
+#demos .fading-slider {height: 350px;}
+#demos .wrap {	width: 640px;}
+#demos pre {color: rgba(255,255,255,.75);line-height: 24px;}
+#demos pre .hilite {display: block;white-space: pre-line;padding: 0 0 0 20px;font-weight: bold;line-height: 24px;color: #fff;}
+#demos .unslider {overflow: visible;position: relative;}
+#setup .unslider-arrow, #demos .unslider-arrow {display: block;width: 22px;height: 32px;top: 42%;right: -42px;left: auto;margin-top: -16px;overflow: hidden;background-image:url(../../images/slider-next.png);text-indent: -999em;transition: opacity .2s;}
+#setup .unslider-arrow:hover, #demos .unslider-arrow:hover {opacity: 1;}
+#setup .unslider-arrow.prev, #demos .unslider-arrow.prev {left: -50px;right: auto;-ms-transform: rotate(-180deg);transform: rotate(-180deg);}
+#demos .demo {padding: 30px 0;}
+#demos .demo > div {position: relative;padding:30px;margin-bottom: 50px;background: #fff;color: #666;text-align: center;text-shadow: none;border-radius: 6px;box-shadow: 0 4px 6px rgba(0,0,0,.1);}
+#demos .demo.vertical-slider-wrapper > div {padding: 0;}
+#demos .demo.vertical-slider-wrapper ul li {padding: 40px;}
+#demos .unslider-nav, #setup .unslider-nav {position: absolute;bottom: 15px;left: 0;right: 0;top: auto;margin: 0;}
+#setup .unslider-nav {bottom: 40px;}
+#demos .unslider-nav ol, #setup .unslider-nav ol {list-style: none;text-align: center;}
+#demos .unslider-nav ol li, #setup .unslider-nav ol li {display: inline-block;float: none;width: 6px;height: 6px;margin: 0 4px;padding: 3px;background: transparent;border-radius: 5px;overflow: hidden;text-indent: -999em;border: 2px solid #000;cursor: pointer;opacity: .4;}
+#demos .unslider-nav ol li.unslider-active, #setup .unslider-nav ol li.unslider-active {background: #000;cursor: default;opacity: 1;}
+.main-logo {
+    padding-top: 4px;
+}
+.mar-remove {
+    margin: 9px auto !important;
+}
+
+.right-menu {     padding-top: 9px;}
+.member-btn {
+    background-color: #fc575c;
+    border: 1px solid #fc575c;
+    border-radius: 3px;
+    color: #fff;
+    display: inline-block;
+    font-family: "ubuntulight";
+    font-size: 16px;
+    height: 32px;
+    letter-spacing: 0.4px;
+    margin-right: 12px;
+    max-width: 170px;
+    padding: 4px 0;
+    text-align: center;
+    width: 100%;
+}
+.p-t-0{padding-top: 0 !important;}
+@media all and (max-width: 640px){
+.wrap, #demos .wrap, dt, #methods h1 + p, #download p,
+#welcome .actions, #welcome .actions div,
+#demos img, #demos .fading-slider .unslider-wrap, #demos .fading-slider li {width: auto;}
+#demos .fading-slider,
+#demos .fading-slider .unslider-wrap, #demos .fading-slider li {position: relative;height: 200px;}
+#demos img, #demos .fading-slider li {position: absolute;}
+#demos img {-webkit-user-drag: none;top: 300%;transform: translateY(-50%) translateX(-50%);height: auto;}
+#setup h2 em {float: right;margin: 0;}
+#setup .unslider-arrow, #demos .unslider-arrow {right: 16px;}
+#setup .unslider-arrow.prev, #demos .unslider-arrow.prev {left: 16px;}
+#setup pre + p {margin: -15px 0 30px;}
+#setup .unslider, #setup .install-steps, #setup .install-steps ul, #setup .install-steps ul li {height: auto;}
+.about-bottom-section p {margin-top: 100px;}
+.about-b {left: 49%;position: absolute;top: 0;}
+.unslider-arrow.next {display: none !important;}
+.unslider-arrow.prev {display: none !important;}
+}
